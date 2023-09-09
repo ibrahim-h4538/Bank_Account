@@ -8,25 +8,22 @@ Follow these steps to use the Bank of Python program:
 Clone this repository to your local machine using the following command:
 
 Terminal
-git clone https://github.com/yourusername/bank-of-python.git
+"git clone https://github.com/yourusername/bank-of-python.git"
 
 
 2) Navigate to the Project Directory
-Change your working directory to the project folder:
-
-Terminal:
-cd bank-of-python
+Change your working directory to the project folder
+Wherever you have saved the project, locate it in your terminal.
 
 
 3) Run the application:
-Start the application by running the following script:
+Start the application by running the following script in your terminal:
 
-Terminal:
-python bank_account.py
+"python bank_account.py"
 
 
 4) Access the Application:
-Open your web browser and go to http://127.0.0.1:5000/login to access the login page.
+Open your web browser and go to "http://127.0.0.1:5000/login" to access the login page.
 
 
 5) Login with Your Account Details:
