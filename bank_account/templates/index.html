@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Welcome to Bank of Python</h2>
+
+<!-- User account details input form -->
+<form method="POST" action="/login">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required>
+    <br>
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required>
+    <br>
+    <label for="account_number">Account Number:</label>
+    <input type="text" id="account_number" name="account_number" required>
+    <br>
+    <button type="submit">Login</button>
+</form>
+
+{% if user_first_name %}
+<p>Welcome, {{ user_first_name }} {{ user_last_name }}</p>
+<p>Account Number: {{ user_account_number }}</p>
+{% endif %}
+
+<h3>Account Details</h3>
+<p>Account Holder: {{ client.first_name }} {{ client.last_name }}</p>
+<p>Account Number: {{ client.account_number }}</p>
+<p>Balance: ${{ client.balance }}</p>
+
+<!-- Display error message in red -->
+{% if error_message %}
+<div class="error" style="color: red;">{{ error_message }}</div>
+{% endif %}
+
+<h3>Transaction</h3>
+<form method="POST" action="/deposit">
+    <label for="amount">Deposit Amount:</label>
+    <input type="number" id="amount" name="amount" required>
+    <button type="submit">Deposit</button>
+</form>
+
+<form method="POST" action="/withdraw">
+    <label for="amount">Withdraw Amount:</label>
+    <input type="number" id="amount" name="amount" required>
+    <button type="submit">Withdraw</button>
+</form>
+{% endblock %}
