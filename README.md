@@ -8,7 +8,7 @@ Follow these steps to use the Bank of Python program:
 Clone this repository to your local machine using the following command:
 
 Terminal
-"git clone https://github.com/yourusername/bank-of-python.git"
+"git clone https://github.com/ibrahim-h4538/Bank_Account.git"
 
 
 2) Navigate to the Project Directory
